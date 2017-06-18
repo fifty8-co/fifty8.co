@@ -1,0 +1,6 @@
+body {
+	font-family: "Poppins", serif;
+}
+
+nav.main-nav ul { list-style-type: none; }
+nav.main-nav ul li { display: inline-block; }
