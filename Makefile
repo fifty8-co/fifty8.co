@@ -1,6 +1,6 @@
 PY?=python
 PELICAN?=pelican
-PELICANOPTS=
+PELICANOPTS= -t themes/f8/
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
