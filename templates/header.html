@@ -1,18 +1,30 @@
-<header class="header">
-	<div class="row">
-		<div class="clearfix">
-			<div class="site-banding">
-				<a href="/"><img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" /></a>
+<nav class="main-nav navigation" role="navigation">
+	<div class="container">
+		<div class="row">
+			<div class="column column-10">
+				<a class="logo" href="/"><img src="{{ url_for('static', filename='img/logo.png') }}" /></a>
 			</div>
-			<div class="nav float-right">
-				<nav class="main-nav">
-					<ul>
-						<li>Home</li>
-						<li>About</li>
-						<li>Contact</li>
-					</ul>
-				</nav>
+			<div class="column column-90">
+				<ul class="navigation-list float-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-</header>
+</nav>
+
+<div class="hero text-center">
+	<div class="container">
+		<div class="row hero-wrap">
+			<div class="hero-msg column column-50 column-offset-25">
+				<h1>Make Your <br/>Product Happen</h1>
+				<p>
+					We are a full service web/app development agency,<br/>delivering top-tier solutions to companies of all sizes.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

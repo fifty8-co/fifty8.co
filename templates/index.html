@@ -1,45 +1,64 @@
 {% extends "base.html" %}
 
+{% block more_head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/2.1.0/css/glide.core.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/2.1.0/css/glide.theme.min.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/2.1.0/glide.min.js"></script>
+{% endblock %}
+
 {% block main %}
-<section>
-	<div id="cloud-infrastructure" class="row">
-		<div class="column column-33">
-			<img src="{{ url_for('static', filename='img/cloud-infrastructure.png') }}" />
-		</div>
-		<div class="column column-67">
-			<h2>Cloud Infrastructure Management</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at nibh odio. Praesent eleifend ex tortor, eget rutrum tortor laoreet ac. Aliquam elementum elit tortor, gravida aliquam nisi venenatis a. In hac habitasse platea dictumst. Nullam convallis mi id eros finibus, gravida ornare arcu gravida. Nulla fermentum risus tristique nibh.
-			</p>
-		</div>
+<section id="about">
+	<div class="container text-center">
+		<h1 class="title">About</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at nibh odio. Praesent eleifend ex tortor, eget rutrum tortor laoreet ac. Aliquam elementum elit tortor, gravida aliquam nisi venenatis a. In hac habitasse platea dictumst. Nullam convallis mi id eros finibus, gravida ornare arcu gravida. Nulla fermentum risus tristique nibh.
+		</p>
 	</div>
-	<div id="mobile-app" class="row">
-		<div class="clearfix">
-			<div class="column column-33 float-right">
-				<img src="{{ url_for('static', filename='img/mobile-app.png') }}" />
+</section>
+<section id="services">
+	<div class="container">
+		<div id="cloud-infrastructure" class="row feature">
+			<div class="column column-33">
+				<img src="{{ url_for('static', filename='img/cloud-infrastructure.png') }}" />
 			</div>
-			<div class="column column-67 float-left">
-				<h2>Mobile App Development</h2>
+			<div class="column column-67">
+				<h1>Infrastructure Management</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at nibh odio. Praesent eleifend ex tortor, eget rutrum tortor laoreet ac. Aliquam elementum elit tortor, gravida aliquam nisi venenatis a. In hac habitasse platea dictumst. Nullam convallis mi id eros finibus, gravida ornare arcu gravida. Nulla fermentum risus tristique nibh.
+				</p>
+			</div>
+		</div>
+		<div id="mobile-app" class="row feature">
+			<div class="clearfix">
+				<div class="column column-33 float-right">
+					<img src="{{ url_for('static', filename='img/mobile-app.png') }}" />
+				</div>
+				<div class="column column-67 float-left">
+					<h1>Mobile App Development</h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at nibh odio. Praesent eleifend ex tortor, eget rutrum tortor laoreet ac. Aliquam elementum elit tortor, gravida aliquam nisi venenatis a. In hac habitasse platea dictumst. Nullam convallis mi id eros finibus, gravida ornare arcu gravida. Nulla fermentum risus tristique nibh. </p>
+				</div>
+			</div>
+		</div>
+		<div id="web-app" class="row clearfix feature">
+			<div class="column column-33">
+				<img src="theme/img/web-app.png" />
+			</div>
+			<div class="column column-67">
+				<h1>Web Development</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at nibh odio. Praesent eleifend ex tortor, eget rutrum tortor laoreet ac. Aliquam elementum elit tortor, gravida aliquam nisi venenatis a. In hac habitasse platea dictumst. Nullam convallis mi id eros finibus, gravida ornare arcu gravida. Nulla fermentum risus tristique nibh.
 				</p>
 			</div>
 		</div>
 	</div>
-	<div id="web-app" class="row clearfix">
-		<div class="column column-33">
-			<img src="theme/img/web-app.png" />
-		</div>
-		<div class="column column-67">
-			<h2>Responsive Web Development</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at nibh odio. Praesent eleifend ex tortor, eget rutrum tortor laoreet ac. Aliquam elementum elit tortor, gravida aliquam nisi venenatis a. In hac habitasse platea dictumst. Nullam convallis mi id eros finibus, gravida ornare arcu gravida. Nulla fermentum risus tristique nibh.
-			</p>
-		</div>
-	</div>
 </section>
 
-<section>
-	{% include "contact-form.html" ignore missing %}
+<section id="contact">
+	<div class="container">
+		<h1 class="title text-center">
+			Contact
+		</h1>
+		{% include "contact-form.html" ignore missing %}
+	</div>
 </section>
 {% endblock %}
