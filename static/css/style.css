@@ -6,7 +6,12 @@ body {
 }
 
 .container { max-width: 102rem; }
+
+h1 { color: #CC4452; }
 .text-center { text-align: center; }
+
+a { color: #CC4452;}
+a:hover { color: #AD343E; }
 
 .button, button,
 input[type='button'],
@@ -14,6 +19,21 @@ input[type='reset'],
 input[type='submit'] {
 	font-size: 1.4rem;
 }
+
+.button:hover, button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover {
+	background-color: #474747 !important;
+	border-color: #474747 !important;
+	color: #fff !important;
+}
+
+.button-primary {
+	background-color: #26547C !important;
+	border-color: #26547C !important;
+}
+
 .button-full-width { width: 100%; }
 
 a.logo img { padding-top: 10px; }
@@ -25,8 +45,15 @@ nav.main-nav ul li {
 	letter-spacing: 1px;
 	padding-top: 4rem;
 }
+nav.main-nav ul li a {
+	color: #474747;
+}
+nav.main-nav ul li a:hover {
+	color: #AD343E;
+}
+section, div.feature { padding-top: 5rem; padding-bottom: 5rem; }
 
-section, div.feature { padding-top: 8rem; padding-bottom: 8rem; }
+#about { margin-top: 5rem; }
 
 .hero {
 	background: url('/static/img/startup-photos-1.jpg') no-repeat center center;
