@@ -6,9 +6,11 @@ body {
 	font-weight: normal;
 }
 
+section { padding: 3.333rem 0; }
 .container { max-width: 102rem; }
 
 h1 { color: #CC4452; }
+h1,h2,h3,h4,h5,h6 { line-height: 1.618; }
 .text-center { text-align: center; }
 
 a { color: #CC4452;}
@@ -35,7 +37,7 @@ input[type='submit']:hover {
 	border-color: #26547C !important;
 }
 
-.button-full-width { width: 100%; }
+.full-width { width: 100%; }
 
 input[type='email']:focus,
 input[type='number']:focus,
@@ -48,7 +50,21 @@ textarea:focus, select:focus {
 	border-color: #26547C;
 }
 
-a.logo img { padding-top: 10px; }
+nav.main-nav {
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 99999;
+	width: 100%;
+	padding: 10px 25px;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-box-align: center;
+	align-items: center;
+}
+a.logo img { max-width: 100px; }
 nav.main-nav ul { list-style-type: none; }
 nav.main-nav ul li {
 	display: inline-block;
@@ -58,28 +74,52 @@ nav.main-nav ul li {
 	padding-top: 4rem;
 }
 nav.main-nav ul li a {
-	color: #474747;
+	color: #fff;
 }
 nav.main-nav ul li a:hover {
 	color: #AD343E;
 }
-section, div.feature { padding-top: 5rem; padding-bottom: 5rem; }
-
-#about { margin-top: 5rem; }
 
 .hero {
-	background: url('/static/img/startup-photos-1.jpg') no-repeat center center;
+	overflow: hidden;
+	position: relative;
 	background-size: cover;
-	max-width: 100%; max-height: 100%;
-	height: 45vw;
+}
+.hero .container { padding: 9rem 0; }
+
+.hero-video {
+	min-height: 100vh;
 	color: #fff;
 }
-.hero .container, .hero-wrap { height: 100%; }
-.hero-wrap { align-items: center; }
-.hero-msg { text-transform: uppercase; }
-.hero-msg h1 { font-weight: 900; font-size: 5em; }
+.hero-video .hero-content {
+	position: absolute;
+	top:50%; left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 1rem;
+}
+.hero video {
+	width: 100%;
+	height: auto;
+}
 
-#about .container { max-width: 72rem; }
+.hero-solid {
+	color: #fff;
+}
+.hero-solid h1 {
+	color: #fff;
+	font-size: 10.5rem;
+}
+
+.footer {
+	padding: 3.333rem 0;
+	border-top: 1px solid #e6e6e6;
+}
+.footer .cta.massive { font-size: 10.8rem; font-weight: 700; }
+#mc-embedded-subscribe-form input[type='submit'] {
+	padding: 0;
+}
 
 .contact-form { max-width: 72rem; margin: 0 auto; }
 .contact-form textarea { height: 192px; }
+
+.hidden { display: none; }
