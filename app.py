@@ -6,11 +6,15 @@ sparky = SparkPost('<API KEY HERE>')
 
 @app.route('/')
 def index():
-	return render_template('index.html')
+	return render_template('index.html', page_classes='home')
 
 @app.route('/contact')
-def contact():
-	return render_template('contact.html')
+def contact_page():
+	return render_template('contact.html', page_classes='contact')
+
+@app.route('/services')
+def services_page():
+	return render_template('services.html', page_classes='services');
 
 @app.route('/sendmsg', methods=['GET', 'POST'])
 def sendmsg():

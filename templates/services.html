@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="hero hero-solid" style="background-color: #CC4452;">
+	<div class="hero-content text-center">
+		<div class="container">
+			<div class="row">
+				<div class="column column-70 column-offset-15">
+					<h1 class="massive">What we do</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column column-50 column-offset-25">
+					<h4>
+						From concept to launch: we help clients big and small to build fantastic digital products using lean & collaborative processes.
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="services">
+	<div class="row">
+		<div class="column column-40 photo">
+			<img src="{{ url_for('static', filename='img/office.jpg') }}" />
+		</div>
+		<div class="column column-60 content">
+			<div>
+				<div class="row">
+					<div class="column">
+						<h3>IT Infrastructure Management</h3>
+						<p>
+							We will take full responsibility for all of your I.T. needs. Our goal is to not only lower your overall costs, but also make your whole infrastructure much more reliable and productive.
+							<ul>
+								<li>Infrastructure Consulting</li>
+								<li>Setup & Management</li>
+								<li>Performance Monitor</li>
+								<li>Backup & Disaster Recovery</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<h3>Web Development</h3>
+						<p>
+							Our UX experts will help you build a strong brand present on the web. We specialise in full-stack web development with a lean, collaborative process.
+							<ul>
+								<li>Logo & Branding</li>
+								<li>User Experience Design</li>
+								<li>Development</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<h3>App Development</h3>
+						<p>
+							We create scalable, high-performance mobile apps for iOS and Android, using the latest technology. Everything from small custom work projects to full builds.
+							<ul>
+								<li>iOS Developement</li>
+								<li>Android Developement</li>
+								<li>Backend Developement</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

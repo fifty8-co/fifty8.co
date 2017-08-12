@@ -2,18 +2,19 @@
 
 {% block main %}
 <div class="hero hero-video">
-	<div class="">
+	<div class="video-container">
+		<div class="overlay"></div>
 		<video autoplay loop muted>
 			<source src="{{ url_for('static', filename='video/office.mp4') }}" type="video/mp4" />
 		</video>
 	</div>
 	<div class="hero-content text-center">
 		<div class="container">
-			<h2>One stop shop for all your IT need</h2>
+			<h2><strong>One stop shop for all your IT need</strong></h2>
 			<h4>
 				Building products and managing your IT infrastructure are hard. Our startup mindset will help you get there.
 			</h4>
-			<a class="button cta" href="/services">See What We Do</a>
+			<a class="button button-secondary cta" href="/services">See What We Do</a>
 		</div>
 	</div>
 </div>

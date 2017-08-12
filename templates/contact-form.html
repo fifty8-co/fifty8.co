@@ -1,12 +1,12 @@
-<div id="contact-form">
-	<form method="post" action="/sendmsg">
+<div>
+	<form id="contact-form" class="contact-form" method="post" action="/sendmsg">
 		<fieldset>
-			<label for="nameField">Your Name</label>
-			<input type="text" id="nameField" name="nameField" required/>
-			<label for="emailField">Your Email</label>
-			<input type="email" id="emailField" name="emailField" required />
+			<label for="nameField">Your name</label>
+			<input type="text" id="nameField" name="nameField" placeholder="John Doe" required/>
+			<label for="emailField">Your email</label>
+			<input type="email" id="emailField" name="emailField" placeholder="you@email.com" required />
 			<label for="msgField">Message</label>
-			<textarea id="msgField" name="msgField" required ></textarea>
+			<textarea id="msgField" name="msgField" placeholder="Let us know how we can help..." required></textarea>
 			<label for="referralField">How did you hear about us?</label>
 			<select id="referralField" name="referralField">
 				<option disabled selected value>-- Select an option --</option>
@@ -16,7 +16,7 @@
 				<option value="Search engine">Search engine (Google, Yahoo, Bing, etc.)</option>
 				<option value="Other">Other</option>
 			</select>
-			<input class="button-primary button-full-width" type="submit" value="Send" />
+			<input class="button button-secondary full-width" type="submit" value="Send" />
 		</fieldset>
 	</form>
 </div>
